@@ -1,0 +1,537 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E10DE2AABF3BF299017C5E2C /* Pods_testProjectForSimbir.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D99C5BDB452BC68C8D5F77B /* Pods_testProjectForSimbir.framework */; };
+		F301602927ACED7E008AA919 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F301602827ACED7E008AA919 /* AppDelegate.swift */; };
+		F301602D27ACED7E008AA919 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F301602C27ACED7E008AA919 /* CalendarViewController.swift */; };
+		F301603227ACED7F008AA919 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F301603127ACED7F008AA919 /* Assets.xcassets */; };
+		F301603527ACED7F008AA919 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F301603327ACED7F008AA919 /* LaunchScreen.storyboard */; };
+		F301603F27ACEE66008AA919 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F301603E27ACEE66008AA919 /* DetailViewController.swift */; };
+		F315265727AFFD11006FFA86 /* TaskCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F315265627AFFD11006FFA86 /* TaskCellTableViewCell.swift */; };
+		F328D44727B04A4600432952 /* TaskModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D44627B04A4600432952 /* TaskModel.swift */; };
+		F328D45127B0E9D000432952 /* CalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D45027B0E9D000432952 /* CalendarInteractor.swift */; };
+		F328D45327B0E9DE00432952 /* CalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D45227B0E9DE00432952 /* CalendarPresenter.swift */; };
+		F328D45727B0E9FF00432952 /* CalendarRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D45627B0E9FF00432952 /* CalendarRouter.swift */; };
+		F328D45927B0EA0C00432952 /* CalendarScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D45827B0EA0C00432952 /* CalendarScene.swift */; };
+		F328D45B27B0EA1800432952 /* CalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D45A27B0EA1800432952 /* CalendarProtocols.swift */; };
+		F328D46127B2FAD000432952 /* DetailsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F328D46027B2FAD000432952 /* DetailsScene.swift */; };
+		F338FD8527B4DB63008A5086 /* AddTaskPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338FD8427B4DB63008A5086 /* AddTaskPresenter.swift */; };
+		F338FD8727B4DB73008A5086 /* AddTaskRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338FD8627B4DB73008A5086 /* AddTaskRouter.swift */; };
+		F338FD8927B4DB83008A5086 /* AddTaskProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338FD8827B4DB83008A5086 /* AddTaskProtocols.swift */; };
+		F338FD8D27B57929008A5086 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F338FD8C27B57929008A5086 /* RealmManager.swift */; };
+		F370B91527B431F9001FFEFC /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B91427B431F9001FFEFC /* AddTaskViewController.swift */; };
+		F370B91827B448A7001FFEFC /* AddTaskScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B91727B448A7001FFEFC /* AddTaskScene.swift */; };
+		F370B91A27B45805001FFEFC /* AddTaskInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B91927B45805001FFEFC /* AddTaskInteractor.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		28C7CCCF6BD25B4AA766AE6B /* Pods-testProjectForSimbir.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProjectForSimbir.debug.xcconfig"; path = "Target Support Files/Pods-testProjectForSimbir/Pods-testProjectForSimbir.debug.xcconfig"; sourceTree = "<group>"; };
+		3D99C5BDB452BC68C8D5F77B /* Pods_testProjectForSimbir.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testProjectForSimbir.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC81B5281361BACA131753A8 /* Pods-testProjectForSimbir.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testProjectForSimbir.release.xcconfig"; path = "Target Support Files/Pods-testProjectForSimbir/Pods-testProjectForSimbir.release.xcconfig"; sourceTree = "<group>"; };
+		F301602527ACED7E008AA919 /* testProjectForSimbir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProjectForSimbir.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F301602827ACED7E008AA919 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F301602C27ACED7E008AA919 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		F301603127ACED7F008AA919 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F301603427ACED7F008AA919 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F301603627ACED7F008AA919 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F301603E27ACEE66008AA919 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F315265627AFFD11006FFA86 /* TaskCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskCellTableViewCell.swift; sourceTree = "<group>"; };
+		F328D44627B04A4600432952 /* TaskModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskModel.swift; sourceTree = "<group>"; };
+		F328D45027B0E9D000432952 /* CalendarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarInteractor.swift; sourceTree = "<group>"; };
+		F328D45227B0E9DE00432952 /* CalendarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarPresenter.swift; sourceTree = "<group>"; };
+		F328D45627B0E9FF00432952 /* CalendarRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarRouter.swift; sourceTree = "<group>"; };
+		F328D45827B0EA0C00432952 /* CalendarScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarScene.swift; sourceTree = "<group>"; };
+		F328D45A27B0EA1800432952 /* CalendarProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarProtocols.swift; sourceTree = "<group>"; };
+		F328D46027B2FAD000432952 /* DetailsScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsScene.swift; sourceTree = "<group>"; };
+		F338FD8427B4DB63008A5086 /* AddTaskPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskPresenter.swift; sourceTree = "<group>"; };
+		F338FD8627B4DB73008A5086 /* AddTaskRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskRouter.swift; sourceTree = "<group>"; };
+		F338FD8827B4DB83008A5086 /* AddTaskProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskProtocols.swift; sourceTree = "<group>"; };
+		F338FD8C27B57929008A5086 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F370B91427B431F9001FFEFC /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		F370B91727B448A7001FFEFC /* AddTaskScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskScene.swift; sourceTree = "<group>"; };
+		F370B91927B45805001FFEFC /* AddTaskInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskInteractor.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F301602227ACED7E008AA919 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E10DE2AABF3BF299017C5E2C /* Pods_testProjectForSimbir.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CDC892E717C4EC58F5F17D1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D99C5BDB452BC68C8D5F77B /* Pods_testProjectForSimbir.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E197C89CB1166E5BA150CEA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28C7CCCF6BD25B4AA766AE6B /* Pods-testProjectForSimbir.debug.xcconfig */,
+				CC81B5281361BACA131753A8 /* Pods-testProjectForSimbir.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F301601C27ACED7D008AA919 = {
+			isa = PBXGroup;
+			children = (
+				F301602727ACED7E008AA919 /* testProjectForSimbir */,
+				F301602627ACED7E008AA919 /* Products */,
+				E197C89CB1166E5BA150CEA7 /* Pods */,
+				CDC892E717C4EC58F5F17D1C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F301602627ACED7E008AA919 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F301602527ACED7E008AA919 /* testProjectForSimbir.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F301602727ACED7E008AA919 /* testProjectForSimbir */ = {
+			isa = PBXGroup;
+			children = (
+				F338FD8B27B578FA008A5086 /* Screens */,
+				F328D44527B04A2600432952 /* Models */,
+				F338FD8A27B578A3008A5086 /* Services */,
+				F301602827ACED7E008AA919 /* AppDelegate.swift */,
+				F301603127ACED7F008AA919 /* Assets.xcassets */,
+				F301603327ACED7F008AA919 /* LaunchScreen.storyboard */,
+				F301603627ACED7F008AA919 /* Info.plist */,
+			);
+			path = testProjectForSimbir;
+			sourceTree = "<group>";
+		};
+		F301603C27ACEE17008AA919 /* CalendarScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F315265527AFFCEB006FFA86 /* taskCell */,
+				F301602C27ACED7E008AA919 /* CalendarViewController.swift */,
+				F328D45027B0E9D000432952 /* CalendarInteractor.swift */,
+				F328D45227B0E9DE00432952 /* CalendarPresenter.swift */,
+				F328D45627B0E9FF00432952 /* CalendarRouter.swift */,
+				F328D45827B0EA0C00432952 /* CalendarScene.swift */,
+				F328D45A27B0EA1800432952 /* CalendarProtocols.swift */,
+			);
+			path = CalendarScreen;
+			sourceTree = "<group>";
+		};
+		F301603D27ACEE27008AA919 /* DetailInfoScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F301603E27ACEE66008AA919 /* DetailViewController.swift */,
+				F328D46027B2FAD000432952 /* DetailsScene.swift */,
+			);
+			path = DetailInfoScreen;
+			sourceTree = "<group>";
+		};
+		F315265527AFFCEB006FFA86 /* taskCell */ = {
+			isa = PBXGroup;
+			children = (
+				F315265627AFFD11006FFA86 /* TaskCellTableViewCell.swift */,
+			);
+			path = taskCell;
+			sourceTree = "<group>";
+		};
+		F328D44527B04A2600432952 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F328D44627B04A4600432952 /* TaskModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F338FD8A27B578A3008A5086 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F338FD8C27B57929008A5086 /* RealmManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F338FD8B27B578FA008A5086 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F301603C27ACEE17008AA919 /* CalendarScreen */,
+				F301603D27ACEE27008AA919 /* DetailInfoScreen */,
+				F370B91627B4320F001FFEFC /* AddTaskScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F370B91627B4320F001FFEFC /* AddTaskScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F370B91427B431F9001FFEFC /* AddTaskViewController.swift */,
+				F370B91927B45805001FFEFC /* AddTaskInteractor.swift */,
+				F338FD8427B4DB63008A5086 /* AddTaskPresenter.swift */,
+				F338FD8627B4DB73008A5086 /* AddTaskRouter.swift */,
+				F370B91727B448A7001FFEFC /* AddTaskScene.swift */,
+				F338FD8827B4DB83008A5086 /* AddTaskProtocols.swift */,
+			);
+			path = AddTaskScreen;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F301602427ACED7E008AA919 /* testProjectForSimbir */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F301603927ACED7F008AA919 /* Build configuration list for PBXNativeTarget "testProjectForSimbir" */;
+			buildPhases = (
+				65CBAD95C8392328A8ADBF96 /* [CP] Check Pods Manifest.lock */,
+				F301602127ACED7E008AA919 /* Sources */,
+				F301602227ACED7E008AA919 /* Frameworks */,
+				F301602327ACED7E008AA919 /* Resources */,
+				E144C98D1602AEFAF729D03B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testProjectForSimbir;
+			productName = testProjectForSimbir;
+			productReference = F301602527ACED7E008AA919 /* testProjectForSimbir.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F301601D27ACED7D008AA919 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					F301602427ACED7E008AA919 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = F301602027ACED7D008AA919 /* Build configuration list for PBXProject "testProjectForSimbir" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F301601C27ACED7D008AA919;
+			productRefGroup = F301602627ACED7E008AA919 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F301602427ACED7E008AA919 /* testProjectForSimbir */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F301602327ACED7E008AA919 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F301603527ACED7F008AA919 /* LaunchScreen.storyboard in Resources */,
+				F301603227ACED7F008AA919 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65CBAD95C8392328A8ADBF96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-testProjectForSimbir-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E144C98D1602AEFAF729D03B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testProjectForSimbir/Pods-testProjectForSimbir-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-testProjectForSimbir/Pods-testProjectForSimbir-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-testProjectForSimbir/Pods-testProjectForSimbir-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F301602127ACED7E008AA919 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F315265727AFFD11006FFA86 /* TaskCellTableViewCell.swift in Sources */,
+				F328D44727B04A4600432952 /* TaskModel.swift in Sources */,
+				F338FD8927B4DB83008A5086 /* AddTaskProtocols.swift in Sources */,
+				F328D46127B2FAD000432952 /* DetailsScene.swift in Sources */,
+				F328D45727B0E9FF00432952 /* CalendarRouter.swift in Sources */,
+				F338FD8D27B57929008A5086 /* RealmManager.swift in Sources */,
+				F328D45127B0E9D000432952 /* CalendarInteractor.swift in Sources */,
+				F301602D27ACED7E008AA919 /* CalendarViewController.swift in Sources */,
+				F370B91827B448A7001FFEFC /* AddTaskScene.swift in Sources */,
+				F370B91527B431F9001FFEFC /* AddTaskViewController.swift in Sources */,
+				F301603F27ACEE66008AA919 /* DetailViewController.swift in Sources */,
+				F301602927ACED7E008AA919 /* AppDelegate.swift in Sources */,
+				F328D45927B0EA0C00432952 /* CalendarScene.swift in Sources */,
+				F338FD8727B4DB73008A5086 /* AddTaskRouter.swift in Sources */,
+				F328D45327B0E9DE00432952 /* CalendarPresenter.swift in Sources */,
+				F370B91A27B45805001FFEFC /* AddTaskInteractor.swift in Sources */,
+				F338FD8527B4DB63008A5086 /* AddTaskPresenter.swift in Sources */,
+				F328D45B27B0EA1800432952 /* CalendarProtocols.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F301603327ACED7F008AA919 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F301603427ACED7F008AA919 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F301603727ACED7F008AA919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F301603827ACED7F008AA919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F301603A27ACED7F008AA919 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28C7CCCF6BD25B4AA766AE6B /* Pods-testProjectForSimbir.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LYZTV4Q9XP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testProjectForSimbir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GAI1.testProjectForSimbir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F301603B27ACED7F008AA919 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC81B5281361BACA131753A8 /* Pods-testProjectForSimbir.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = LYZTV4Q9XP;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = testProjectForSimbir/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = GAI1.testProjectForSimbir;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F301602027ACED7D008AA919 /* Build configuration list for PBXProject "testProjectForSimbir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F301603727ACED7F008AA919 /* Debug */,
+				F301603827ACED7F008AA919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F301603927ACED7F008AA919 /* Build configuration list for PBXNativeTarget "testProjectForSimbir" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F301603A27ACED7F008AA919 /* Debug */,
+				F301603B27ACED7F008AA919 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F301601D27ACED7D008AA919 /* Project object */;
+}
