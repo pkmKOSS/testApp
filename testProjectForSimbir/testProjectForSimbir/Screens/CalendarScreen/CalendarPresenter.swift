@@ -10,7 +10,7 @@ import Foundation
 class CalendarPresenter {
     // MARK: - External vars
     var viewController: CalendarDisplayLigic?
-    var dictionary = [String: TaskRealmModel]()
+    var arrayForViewController = [TaskRealmModel]()
 }
 
 extension CalendarPresenter: CalendarPresentingLogic {
@@ -28,7 +28,6 @@ extension CalendarPresenter: CalendarPresentingLogic {
             let task = TaskRealmModel()
 
             guard let date = Double(item.task_date) else { return }
-            let key = dateFormatterForDictionary.string(from: Date(timeIntervalSince1970: date))
             
             guard let time = Double(item.task_time) else { return }
             task.task_time = dateFormatterForCell.string(from: Date(timeIntervalSince1970: time))
@@ -37,9 +36,9 @@ extension CalendarPresenter: CalendarPresentingLogic {
             task.descriptionString = item.descriptionString
             task.name = item.name
             
-            dictionary[key] = task
+            arrayForViewController.append(task)
         }
-        viewController?.displayData(array: dictionary)
+        viewController?.displayData(array: arrayForViewController)
     }
 }
 

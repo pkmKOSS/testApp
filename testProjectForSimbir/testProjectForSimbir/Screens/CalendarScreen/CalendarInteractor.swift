@@ -32,7 +32,6 @@ extension CalendarInteractor: CalendarBusinessLogic {
             let key =  dateFormater.string(from: Date(timeIntervalSince1970: date))
             dict[key] = item
             model = dict
-            print("print: описание модели в Календаре \(item.descriptionString)")
         }
         presenter?.presentData(array: arrayForPresent)
     }

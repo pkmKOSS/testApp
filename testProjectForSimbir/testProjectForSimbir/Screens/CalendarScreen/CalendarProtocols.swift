@@ -8,7 +8,7 @@
 import Foundation
 
 protocol CalendarDisplayLigic {
-    func displayData(array: [String: TaskRealmModel])
+    func displayData(array: [TaskRealmModel])
 }
 
 protocol CalendarBusinessLogic {

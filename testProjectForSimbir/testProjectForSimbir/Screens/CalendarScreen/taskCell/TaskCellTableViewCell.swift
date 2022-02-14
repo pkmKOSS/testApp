@@ -46,9 +46,6 @@ class TaskCellTableViewCell: UITableViewCell {
         
         tapRecognaizer.addTarget(self, action: #selector(tapFunc))
         
-        timeLabel.text = "timeLabel"
-        descriptionLabel.text = "Description Label"
-        
         timeLabel.translatesAutoresizingMaskIntoConstraints = false
         timeLabel.numberOfLines = 0
         timeLabel.textAlignment = .left

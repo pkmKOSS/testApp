@@ -25,9 +25,7 @@ extension AddTaskInteractor: AddTaskBusinessLogic {
         task.task_date = "\(Int64(task_date.timeIntervalSince1970))"
         task.name = name
         task.descriptionString = descriptionString
-        
-        print( "print: заметка в интеракторе адд скирн \(task.descriptionString)")
-        
+                
         RealmManager.shared.saveTaskRealmModel(model: task)
         presenter?.presentData(name: name, date: task_date, time: task_time)
     }

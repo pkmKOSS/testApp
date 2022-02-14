@@ -84,7 +84,7 @@ class AddTaskViewController: UIViewController {
     
     // MARK: - @objc func
     @objc func addTask(){
-        let id = Int.random(in: 1...10000)
+        let id = Int.random(in: 1...1000000)
         interactor?.uploadData(id: id,
                                task_time: timePicker.date,
                                task_date: dateOfTask!,

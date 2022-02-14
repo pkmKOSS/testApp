@@ -23,7 +23,7 @@ class CalendarViewController: UIViewController {
     private let taskTableView = UITableView()
     private let showCalendarButton = UIButton()
     private let dateFormater = DateFormatter()
-    private var dictionaryForCell = [String: TaskRealmModel]()
+    private var arrayForCell = [TaskRealmModel]()
     private var selectedDate = Date()
     private var calendarHeightConstraint = NSLayoutConstraint()
     private var viewFrame = CGFloat()
@@ -143,25 +143,51 @@ extension CalendarViewController: FSCalendarDelegate, FSCalendarDataSource, UITa
         dateFormater.dateFormat = "yyyy:MM:dd"
         dateFormater.locale = Locale.current
         
-        let dictionaryKey = dateFormater.string(from: selectedDate)
+        var array = [TaskRealmModel]()
+        let arrayKey = dateFormater.string(from: selectedDate)
         
-        let adress = dictionaryForCell["\(dictionaryKey)"]
-        
-        if indexPath.row == Int(adress?.task_time ?? ""){
-            cell.setup(timeStartText: "\(indexPath.row):00",
-                       timeFinishText: "\(indexPath.row + 1):00",
-                       descriptionLabel: adress?.name ?? ""){ [self] in
-                self.router?.routToDetail(task_date: adress!.task_date)
+        for item in arrayForCell {
+            if item.task_date == arrayKey {
+                array.append(item)
             }
-            cell.addTuskButton.isHidden = true
-        } else {
+            print(" print: ключ =  \(arrayKey)")
+            print(" print: дейт =  \(item.task_date)")
+            print(" print: 'array count =  \(array.count)")
+        }
+        
+        
+        // cycle for date whith task
+        
+        for item in array {
+            if indexPath.row == Int(item.task_time){
+                cell.setup(timeStartText: "\(indexPath.row):00",
+                           timeFinishText: "\(indexPath.row + 1):00",
+                           descriptionLabel: item.name){ [self] in
+                    self.router?.routToDetail(task_date: String("\(item.id)"))
+                }
+                cell.addTuskButton.isHidden = true
+                break
+            } else {
+                cell.setup(timeStartText: "\(indexPath.row):00", // создание пустой ячейки
+                           timeFinishText: "\(indexPath.row + 1):00",
+                           descriptionLabel: ""){
+                    self.router?.routToAddTuskScreen(date: self.selectedDate)
+                }
+                cell.addTuskButton.isHidden = false
+            }
+        }
+        
+        // code for empty cell
+        
+        if array.count == 0 {
             cell.setup(timeStartText: "\(indexPath.row):00", // создание пустой ячейки
                        timeFinishText: "\(indexPath.row + 1):00",
-                       descriptionLabel: ""){ 
+                       descriptionLabel: ""){
                 self.router?.routToAddTuskScreen(date: self.selectedDate)
             }
             cell.addTuskButton.isHidden = false
         }
+        
         return cell
     }
     
@@ -180,8 +206,8 @@ extension CalendarViewController: FSCalendarDelegate, FSCalendarDataSource, UITa
 }
 
 extension CalendarViewController: CalendarDisplayLigic {
-    func displayData(array: [String: TaskRealmModel]) {
-        dictionaryForCell = array
+    func displayData(array: [TaskRealmModel]) {
+        arrayForCell = array
         taskTableView.reloadData()
     }
 }
