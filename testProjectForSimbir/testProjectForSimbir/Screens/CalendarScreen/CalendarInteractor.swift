@@ -28,8 +28,7 @@ extension CalendarInteractor: CalendarBusinessLogic {
         
         arrayForPresent.append(contentsOf: RealmManager.shared.localRealm.objects(TaskRealmModel.self))
         for item in arrayForPresent {
-            guard let date = Double(item.task_date) else { return }
-            let key =  dateFormater.string(from: Date(timeIntervalSince1970: date))
+            let key =  String("\(item.id)")
             dict[key] = item
             model = dict
         }

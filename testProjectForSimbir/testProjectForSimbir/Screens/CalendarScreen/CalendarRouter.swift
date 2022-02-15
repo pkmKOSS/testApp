@@ -17,6 +17,7 @@ class CalendarRouter: CalendarDataPassingLogic {
 extension CalendarRouter: CalendarRoutingLogic {
     func routToDetail(task_date: String) {
         guard let store = self.dataStore?.model![task_date] else { return }
+        print(" in router print: \(store)")
             let vc = DetailsScene.build(task: store)
             self.viewController?.present(vc, animated: true, completion: nil)
     }
